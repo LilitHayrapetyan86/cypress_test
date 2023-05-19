@@ -1,0 +1,102 @@
+
+PRECONDITON   https://automationteststore.com/    page is open
+
+ I The currency selection checking
+1.fix the mouse over the currency selection drop-down button
+2.select a different currency and click
+Result: the cost of all products should be indicated in the selected currency
+
+II Continue shopping button checking
+1.select any product and click  ‘Add to cart’ button
+2.open shopping cart
+3.click ‘Continue’ shopping button
+Result: User should be navigated to Home Page
+
+III Minimum quantity limit checking
+1.find the product with the minimum quantity limit and open
+2.fill the quantity less then the minimum quantity limit
+3.click  ‘Add to cart’ button
+Result: User should be navigated to shopping cart and see error like this
+ “Allowed product's quantity is below minimum required. Quantity was set to minimum amount.”
+
+IV Title changes checking
+1.click on any section of the product 
+2.select any subsection and click on it
+Result: the page title should be has subsection name.
+
+V Checking the total price with the entered quantity
+1.select any product and click  on it
+2.increase the quantity of product 
+Result: The total price should be multiplied according to the entered quantity
+
+VI Add a review with all valid inputs
+1.select any product and click  on it
+2.below the product find the ‘Reviews’ button and click  on it
+3.click on the rating stars
+4.Fill ‘Your name’ field with more than 3 characters
+5.Fill in the ‘Your review’ field with more than 25 characters
+6.Enter the verification code in the field next to the ‘Submit’ button
+Result: Result: The user should be see a message like this
+ Thank you for your review. It has been submitted to the webmaster for approval.
+
+VII Add à review without verification code entered
+1.select any product and click  on it
+2. below the product find the ‘Reviews’ button and click  on it
+3.click on the ‘Submit’ button
+Result: The user should be see an error message like this
+ “Human verification has failed! Please try again.
+
+VIII Add à review without  review  text entered
+1.select any product and click  on it
+2.below the product find the ‘Reviews’ button and click  on it
+3.click on the rating stars
+4.Fill ‘Your name’ field
+5.Enter the verification code in the field next to the ‘Submit’ button
+Result: Result: The user should be see an error message like this
+ “Error: Review Text must be between 25 and 1000 characters!.
+
+IX Add à review with incorrect  ‘Your name’
+1.select any product and click  on it
+2.below the product find the reviews button and click on it
+3.click on the rating stars
+4.Fill in ‘Your name’ field with less than 3 characters.
+5.Fill in the ‘Your review’ field with more than 25 characters
+6.Enter the verification code in the field next to the "Submit" button
+Result: Result: The user should be see an error message like this
+ “Error: Review Name must be between 3 and 25 characters!
+
+X ‘Special’ section checking
+1.fix the mouse over the ‘Special’ section and click on it
+Result: User should be navigated to Special Page where all products should be in discount and should has two price` without discount and with discount
+
+XI Checking  ‘Check order’ Function with unreal user value
+1.fix  the mouse cursor over the ‘Account’ drop-down section
+2.select the subsection “Check your order” and click on it
+3.Fill in the ‘Order ID’ field with any numbers
+4.Fill in the ‘E-mail’ field with an unregistered email address
+5.Click on the ‘Continue’ button.
+Result: The user should see the following message:
+ “The order you requested has not been found!”
+
+XII Checking  “Print" Function 
+1.1.select any product and click  on it
+2.Click on the ‘Print’ button.
+Result: The user should see window for print.
+
+XII Checking  ‘Search’ Function 
+1. In the ‘Search’ field type any product name and click  on it
+Result: The user should be navigated to the page of product which he search
+
+
+
+
+
+
+
+
+
+
+
+
+
+

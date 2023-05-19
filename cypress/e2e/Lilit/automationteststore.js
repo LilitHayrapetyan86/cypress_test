@@ -32,9 +32,6 @@ describe("Lilit Tests", ()=> {
         
         cy.get('#block_frame_featured_1769 > div > div:nth-child(1) > div.thumbnail > a > img').click();
         cy.get('#myTab > li:nth-child(2) > a').click();
-        cy.get('#rating1 > a').click(); 
-        cy.get('#name').type("Lilit");
-        cy.get("[name='text']").type("Lilit");
         cy.get('#review_submit').click(); 
         
         cy.get("[class='alert alert-error alert-danger']")
@@ -51,5 +48,15 @@ describe("Lilit Tests", ()=> {
       cy.title().should('include','Cheeks');                
   })
     
+  it("Checking  'Check order' function with unreal user value", ()=> {
+        
+    cy.get("#topnav > .form-control").select("Check Your Order");
+    cy.get("[name='order_id']").type(123);
+    cy.get("[id='CheckOrderFrm_email']").type("lilit@mail.ru"); 
+    cy.get("[title='Continue']").click();
+    
+    cy.get("[class='contentpanel']")
+      .should("contain.text", "The order you have requested could not be found!");                
+})
 })
 
