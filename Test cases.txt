@@ -83,7 +83,7 @@ XII Checking  “Print" Function
 2.Click on the ‘Print’ button.
 Result: The user should see window for print.
 
-XII Checking  ‘Search’ Function 
+XIII Checking  ‘Search’ Function 
 1. In the ‘Search’ field type any product name and click  on it
 Result: The user should be navigated to the page of product which he search
 
