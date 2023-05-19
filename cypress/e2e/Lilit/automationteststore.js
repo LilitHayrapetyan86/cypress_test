@@ -7,7 +7,7 @@ describe("Lilit Tests", ()=> {
 
   })
 
-    it(" search function checking", ()=> {
+    it("Checking  'Search' Function ", ()=> {
        
         cy.get("[name='filter_keyword']").type("Creme Precieuse Nuit 50ml");
         cy.get("[class='fa fa-search']").click(); 
@@ -17,7 +17,7 @@ describe("Lilit Tests", ()=> {
     })
     
 
-    it("check minimum amount error", ()=> {
+    it("Minimum quantity limit checking", ()=> {
         
         cy.get("[name='filter_keyword']").type("Benefit Bella Bamba");
         cy.get("[class='fa fa-search']").click();
@@ -28,7 +28,7 @@ describe("Lilit Tests", ()=> {
           .should("contain.text", "Allowed product's quantity is below minimum required. Quantity was set to minimum amount.");                
     })
 
-    it("Human verification error ", ()=> {
+    it("Add а review without verification code entered ", ()=> {
         
         cy.get('#block_frame_featured_1769 > div > div:nth-child(1) > div.thumbnail > a > img').click();
         cy.get('#myTab > li:nth-child(2) > a').click();
@@ -39,7 +39,7 @@ describe("Lilit Tests", ()=> {
     })
 
 
-    it(" titel check", ()=> {
+    it(" Title changes checking", ()=> {
        
       cy.get(':nth-child(3) > [href="https://automationteststore.com/index.php?rt=product/category&path=36"').click();
       cy.get(':nth-child(1) > .mt10 > a').click();
@@ -48,7 +48,7 @@ describe("Lilit Tests", ()=> {
       cy.title().should('include','Cheeks');                
   })
     
-  it("Checking  'Check order' function with unreal user value", ()=> {
+  it("Checking  'Check order' Function with unreal user value", ()=> {
         
     cy.get("#topnav > .form-control").select("Check Your Order");
     cy.get("[name='order_id']").type(123);
